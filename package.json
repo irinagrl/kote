@@ -1,5 +1,6 @@
 {
-  "name": "funbox",
+  "name": "kote",
+  "homepage": "https://irinamsvch.github.io/kote/",
   "version": "1.0.0",
   "description": "",
   "main": "./index.js",
