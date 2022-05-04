@@ -157,7 +157,7 @@ import './img/cat.png';
         }
     }
 
-    //toggle text
+    //toggle text in a selected card
     function updateTextFooter(selectedCard) {
         if (selectedCard.querySelector('.card__frame').classList.contains('card__frame_selected')) {
             selectedCard.querySelector('.card__text').style.display = 'none';
