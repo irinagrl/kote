@@ -1,3 +1,4 @@
+import 'normalize.css';
 import './style.css';
 import './img/bgPattern.png';
 import './img/cat.png';
@@ -89,7 +90,12 @@ function editAbsentCard(cardElement, foodCard) {
 
 //hover onmouseover
 function mouseOverHandler(evt) {
+    evt.stopPropagation();
     const hoverCard = evt.target.closest('.card');
+
+    if (hoverCard === null) {
+        return false;
+    }
     if (hoverCard.querySelector('.card__frame').classList.contains('card__frame_absent')) {
         return false;
     }
@@ -106,8 +112,15 @@ function mouseOverHandler(evt) {
 
 //hover onmouseout
 function mouseOutHandler(evt) {
+    evt.stopPropagation();
     const hoverCard = evt.target.closest('.card');
 
+    if (hoverCard === null) {
+        return false;
+    }
+    if (hoverCard.querySelector('.card__frame').classList.contains('card__frame_absent')) {
+        return false;
+    }
     if (hoverCard.querySelector('.card__frame').classList.contains('card__frame_selected')) {
         hoverCard.querySelector('.card__frame').style.background = '#E52E7A';
         hoverCard.querySelector('.card__weight').style.background = '#E52E7A';
@@ -124,6 +137,9 @@ function mouseOutHandler(evt) {
 function selectCardHandler(evt) {
     const selectedCard = evt.target.closest('.card');
 
+    if (selectedCard === null) {
+        return false;
+    }
     if (selectedCard.querySelector('.card__frame').classList.contains('card__frame_absent')) {
         return false;
     }
