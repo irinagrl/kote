@@ -1,7 +1,7 @@
 # kote
 This is a 1-page website, an online shop for cat food. It is a technical assignment from a company Funbox.  
 
-## v2.0.0
+## v3.0.0
 
 ## Author: Irina M
 
