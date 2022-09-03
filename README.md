@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 NodeJS and NPM is required and can be downloaded from https://nodejs.org/en/download/
 
 ### To use this repository locally, you need to
-Clone this repo to your local machine `git clone https://github.com/irinamsvch/kote`.
+Clone this repo to your local machine `git clone https://github.com/irinagrl/kote`.
 Install webpack `npm i webpack --save-dev`, webpack interface `npm i webpack-cli --save-dev`, and needed plugins `npm i`.
 Run dev build `npm run dev`.
 The site will open in your browser.
